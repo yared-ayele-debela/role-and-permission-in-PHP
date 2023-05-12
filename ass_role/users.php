@@ -17,10 +17,21 @@ while ($row_roles = mysqli_fetch_assoc($result_roles)) {
 }
 
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
+<!-- JavaScript (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 <h2>Users</h2>
+<button><a href="ass_role.php">Assign Role</a> </button>
+<button><a href="../manage_role/roles.php">Mange permissions</a> </button>
+<button><a href="../manage_permission/permissions.php">Manage Roles</a> </button>
 
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>ID</th>
@@ -61,3 +72,7 @@ while ($row_roles = mysqli_fetch_assoc($result_roles)) {
         <?php endwhile; ?>
     </tbody>
 </table>
+
+</body>
+</html>
+
